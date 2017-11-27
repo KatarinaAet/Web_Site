@@ -4,61 +4,38 @@
 	<meta charset="utf-8">
 	<meta name="despription" content="Это сайт для подготовки к профильному ЕГЭ по математике">
 	<title>Готовимся к ЕГЭ!</title>
-	<link rel="stylesheet" href="mystyles.css">
-	<link rel="stylesheet" href="css/style4.css">
+	<link rel="stylesheet" href="mystyle_1.css">
+
 	<script>document.createElement('aside');
    document.createElement('article');</script>
-   <style>
- aside {
-    background-color: #ffffff;
-    display: inline-block;
-    width: 30%;
-    margin: 2% 4% 0 0;
-    float: right;
-    padding: 3% 3% 0 3%;
-    /*max-width: 430px;*/
-    /*max-height: 550px;*/
-    box-shadow: 3px 3px 8px rgba(0,0,0,0.5);
-}
-   article {
-    background-color: #ffffff;
-    width: 50%;
-    padding: 3% 3%;
-    margin: 2% 0 0 1.5%;
-    display: inline-block;
-    box-shadow: 3px 3px 8px rgba(0,0,0,0.5);
-}
-  </style>
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="http://e-timer.ru/js/etimer.js"></script>
-<script type="text/javascript">
-	jQuery(document).ready(function() {
-		jQuery(".eTimer").eTimer({
-			etType: 0, etDate: "04.06.2018.10.0", etTitleText: "До экзамена осталось:", etTitleSize: 20, etShowSign: 1, etSep: ":", etFontFamily: "Trebuchet MS", etTextColor: "#a3a3a3", etPaddingTB: 15, etPaddingLR: 15, etBackground: "#333333", etBorderSize: 0, etBorderRadius: 2, etBorderColor: "white", etShadow: " 0px 0px 10px 0px #333333", etLastUnit: 4, etNumberFontFamily: "Impact", etNumberSize: 35, etNumberColor: "white", etNumberPaddingTB: 0, etNumberPaddingLR: 8, etNumberBackground: "#11abb0", etNumberBorderSize: 0, etNumberBorderRadius: 5, etNumberBorderColor: "white", etNumberShadow: "inset 0px 0px 10px 0px rgba(0, 0, 0, 0.5)"
-		});
-	});
-</script>
 </head>
+<nav id="main_menu">
+	<ul>
+		<li><a href="Mainpage.html">Главная</a></li><li>Полезные материалы</li><li>Контакты</li>
+	</ul>
+</nav>
+<header id="main_header">
+<h1 id="h1_style">
+			Подготовка к профильному ЕГЭ по математике
+</h1>
+</header>
 <body>
-	<header>
-		<h1 align="center">
-			Добро пожаловать на сайт подготовки к профильному ЕГЭ по математике!
-		</h1>
 		<section>
-			<img align="center" alt="Знаешь, скоро ЕГЭ" src="image_1.png">
-			<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+			
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="http://e-timer.ru/js/etimer.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function() {
 		jQuery(".eTimer").eTimer({
-			etType: 0, etDate: "04.06.2018.10.0", etTitleText: "До экзамена осталось:", etTitleSize: 20, etShowSign: 1, etSep: ":", etFontFamily: "Trebuchet MS", etTextColor: "#a3a3a3", etPaddingTB: 15, etPaddingLR: 15, etBackground: "#333333", etBorderSize: 0, etBorderRadius: 2, etBorderColor: "white", etShadow: " 0px 0px 10px 0px #333333", etLastUnit: 4, etNumberFontFamily: "Impact", etNumberSize: 35, etNumberColor: "white", etNumberPaddingTB: 0, etNumberPaddingLR: 8, etNumberBackground: "#11abb0", etNumberBorderSize: 0, etNumberBorderRadius: 5, etNumberBorderColor: "white", etNumberShadow: "inset 0px 0px 10px 0px rgba(0, 0, 0, 0.5)"
+			etType: 0, etDate: "04.06.2018.10.0", etTitleText: "До экзамена:", etTitleSize: 20, etShowSign: 1, etSep: ":", etFontFamily: "Trebuchet MS", etTextColor: "#f0ffff", etPaddingTB: 15, etPaddingLR: 15, etBackground: "#0a0a0b", etBorderSize: 0, etBorderRadius: 2, etBorderColor: "white", etShadow: " 0px 0px 10px 0px #333333", etLastUnit: 4, etNumberFontFamily: "Impact", etNumberSize: 35, etNumberColor: "white", etNumberPaddingTB: 0, etNumberPaddingLR: 8, etNumberBackground: "#11abb0", etNumberBorderSize: 0, etNumberBorderRadius: 5, etNumberBorderColor: "white", etNumberShadow: "inset 0px 0px 10px 0px rgba(0, 0, 0, 0.5)"
 		});
 	});
 </script>
 			<div id ="timer" class="eTimer"></div>
-			<table align="center" border="1px">
+			<table align="right" style="border: 5px solid black;" style="margin: 20%">
+				<caption align="bottom" style="color: #f0ffff">Таблица перевода баллов</caption>
   		<colgroup>
-    		<col span="1" style="background:Khaki"><!-- С помощью этой конструкции задаем цвет фона для первых двух столбцов таблицы-->
+    		<col span="33" style="background:#F8F8FF" style="border: 5px solid black;">
   		</colgroup>
   			<tr>
     			<th>Первичный балл</th>
@@ -132,9 +109,13 @@
   			</tr>
 			</table>
 		</section>
-	</header>
-	<article>Какое-нибудь бла-бла про ЕГЭ и подготовку... </article>
-	<aside><h2>Структура экзаменационной работы</h2>
+	<article id="article_menu">Здравствуйте! Меня зовут Кулагина Екатерина, и я уже на протяжении 3 лет работаю репетитором по математике. Профильный ЕГЭ по математике - серьёзный экзамен, требующий хороших знаний школьной математики и предельной концентрации. На данной сайте содержатся различные задачи, вспомогательный материалы, которые призваны помочь в подготовке к столь ответственному мероприятию.
+    <figure class="image">
+    	<img src="statistics.gif">
+    	<figcaption>Статистика за 2017 год</figcaption>
+    </figure>
+	</article>
+	<aside id="aside_menu"><h2>Структура экзаменационной работы</h2>
 
 	<nav>
 		<h3>1 часть</h3>		
