@@ -1,19 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<title>Задание1</title>
+	<meta name="despription" content="Задание 1">
+	<title>Задание 1</title>
+	<link rel="stylesheet" href="mystyle_2.css">
+	<style type="text/css">
+ .spoiler_body {display:none; cursor:pointer;}
+</style>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 </head>
-	<body>
-		<h1>Cписок задач</h1>
-			<p> какой-то текст</p>
-			<details>
-			<summary>Мой заголовок 1</summary>
-				<p>Содержание спойлера 1</p>
-			</details>
 
+<script type="text/javascript">
+$(document).ready(function(){
+ $('.spoiler_links').click(function(){
+  $(this).parent().children('div.spoiler_body').toggle('normal');
+  return false;
+ });
+});
+</script>
+<nav id="main_menu">
+	<ul>
+		<li><a href="Mainpage.html">Главная</a></li><li>Полезные материалы</li><li>Контакты</li>
+	</ul>
+</nav>
+<header id="main_header">
+<h1 id="h1_style">
+			Задание 1
+</h1>
+</header>
+<body>
+	<article id="article_menu"><strong>На данной странице представлены типовые задачи задания №1.</strong>
+		<p>Для успешного решения задач такого типа необходимо умение применять знания из поседневной жизни</p>
+	<p>1. Условие первой задачи</p>
+	<div>
+ 	<a href="" class="spoiler_links">Ответ</a>
+ 	<div class="spoiler_body">
+  	Та-дам!!<br>
+ 	</div>
+	</div>
+	<p>2. Условие второй задачи</p>
+	<div>
+ 	<a href="" class="spoiler_links">Ответ</a>
+ 	<div class="spoiler_body">
+  	Та-дам!!<br>
+ 	</div>
+	</div>
+	<p>3. Условие третьей задачи</p>
+	<div>
+ 	<a href="" class="spoiler_links">Ответ</a>
+ 	<div class="spoiler_body">
+  	Та-дам!!<br>
+ 	</div>
+	</div>
+	<p>4. Условие четвёртой задачи</p>
+	<div>
+ 	<a href="" class="spoiler_links">Ответ</a>
+ 	<div class="spoiler_body">
+  	Та-дам!!<br>
+ 	</div>
+	</div>
+	<input type="button" value="Закрыть все"
+    onclick=$("div[class^='spoiler_body']").hide('normal')>
+	<input type="button" value="Открыть все"
+    onclick=$("div[class^='spoiler_body']").show('normal')>
+	</article>
+		
+	<footer>
+		Copywright &copy; 2017
+	</footer>
 
-
-	</body>
-
+</body>
 </html>
