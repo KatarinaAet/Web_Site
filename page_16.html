@@ -5,6 +5,19 @@
 	<meta name="despription" content="Задание 16">
 	<title>Задание 16</title>
 	<link rel="stylesheet" href="mystyle_2.css">
+	<style type="text/css">
+ .spoiler_body {display:none; cursor:pointer;}
+</style>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+</head>
+<script type="text/javascript">
+$(document).ready(function(){
+ $('.spoiler_links').click(function(){
+  $(this).parent().children('div.spoiler_body').toggle('normal');
+  return false;
+ });
+});
+</script>
 </head>
 <nav id="main_menu">
 	<ul>
@@ -17,7 +30,53 @@
 </h1>
 </header>
 <body>
-	<article id="article_menu"><strong>На данной странице представлены типовые задачи задания №16.</strong></article>
+	<article id="article_menu"><strong>На данной странице представлены типовые задачи задания №16.</strong>
+		<p>Для решения данной типа заданий необходимо уверенное знание и умение применять формулы планиметрии.</p>
+		<p>1. В параллелограмме ABCD точка Е – середина стороны АD. Отрезок ВЕ пересекает диагональ АС в точке Р. АB=PD.</p>
+
+			<p>а) Докажите, что отрезок ВЕ перпендикулярен диагонали АС.</p>
+			<p>б) Найдите площадь параллелограмма, если АВ = 2 см, ВС = 3 см.</p>
+		<div>
+ 	<a href="" class="spoiler_links">Ответ</a>
+ 	<div class="spoiler_body">
+  	б) sqrt(35)<br>
+ 	</div>
+	</div>
+	<p>2. На продолжении стороны АС за вершину А треугольника АВС отложен отрезок AD, равный стороне АВ. Прямая, проходящая через точку А параллельно BD, пересекает сторону ВС в точке М.</p>
+
+			<p>а) Докажите, что AM — биссектриса угла ВАС.</p>
+			<p>б) Найдите площадь трапеции AMBD, если площадь треугольника АВС равна 200 и известно отношение АС : АВ = 2:3.</p>
+		<div>
+ 	<a href="" class="spoiler_links">Ответ</a>
+ 	<div class="spoiler_body">
+  	б) 420<br>
+ 	</div>
+	</div>
+	<p>3. Окружность, вписанная в квадрат ABCD, касается его стороны АВ в точке Т, а стороны AD в точке Р. Отрезки СТ и СР пересекают окружность в точках М и N соответственно. Сторона квадрата равна √10.</p>
+
+			<p>а) Докажите, что прямая ТР параллельна прямой MN.</p>
+			<p>б) Найдите МР.</p>
+		<div>
+ 	<a href="" class="spoiler_links">Ответ</a>
+ 	<div class="spoiler_body">
+  	б) 3<br>
+ 	</div>
+	</div>
+	<p>4. Две окружности касаются внутренним образом в точке А, причем меньшая окружность проходит через центр О большей. Диаметр ВС большей окружности вторично пересекает меньшую окружность в точке М, отличной от точки А. Лучи АО и АМ вторично пересекают большую окружность в точках Р и Q соответственно. Точка С лежит на дуге AQ большей окружности, не содержащей точку Р.</p>
+
+			<p>а) Докажите что прямые PQ и ВС параллельны.</p>
+			<p>б) Известно, что sin AOC = √15/4. Прямые РС и AQ пересекаются в точке К. Найдите отношение QK:KA.</p>
+		<div>
+ 	<a href="" class="spoiler_links">Ответ</a>
+ 	<div class="spoiler_body">
+  	б) 1:4<br>
+ 	</div>
+	</div>
+	<input type="button" value="Закрыть все"
+    onclick=$("div[class^='spoiler_body']").hide('normal')>
+	<input type="button" value="Открыть все"
+    onclick=$("div[class^='spoiler_body']").show('normal')>
+	</article>
 		
 	<footer>
 		Copywright &copy; 2017

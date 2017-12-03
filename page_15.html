@@ -5,6 +5,19 @@
 	<meta name="despription" content="Задание 15">
 	<title>Задание 15</title>
 	<link rel="stylesheet" href="mystyle_2.css">
+	<style type="text/css">
+ .spoiler_body {display:none; cursor:pointer;}
+</style>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+</head>
+<script type="text/javascript">
+$(document).ready(function(){
+ $('.spoiler_links').click(function(){
+  $(this).parent().children('div.spoiler_body').toggle('normal');
+  return false;
+ });
+});
+</script>
 </head>
 <nav id="main_menu">
 	<ul>
@@ -17,7 +30,48 @@
 </h1>
 </header>
 <body>
-	<article id="article_menu"><strong>На данной странице представлены типовые задачи задания №15.</strong></article>
+	<article id="article_menu"><strong>На данной странице представлены типовые задачи задания №15.</strong>
+		<p>Для успешного решения задач такого типа необходимо умение решать рациональные, иррациональные, логарифмические неравенства, владеть методом интервалов и рационализации для неравенств.</p>
+		<p>1. <img src="task_15.1.png"></p>
+		<div>
+ 	<a href="" class="spoiler_links">Ответ</a>
+ 	<div class="spoiler_body">
+  	x ∈(– ∞;–1/4) ∪ (0;2)<br>
+ 	</div>
+	</div>
+	<p>2. <img src="task_15.2.png"></p>
+		<div>
+ 	<a href="" class="spoiler_links">Ответ</a>
+ 	<div class="spoiler_body">
+  	x ∈(– 2, -63/32)<br>
+ 	</div>
+	</div>
+	<p>3. <img src="task_15.3.png"></p>
+		<div>
+ 	<a href="" class="spoiler_links">Ответ</a>
+ 	<div class="spoiler_body">
+  	x ∈(– ∞;0]U(1;log34)<br>
+ 	</div>
+	</div>
+	<p>4. <img src="task_15.4.png"></p>
+		<div>
+ 	<a href="" class="spoiler_links">Ответ</a>
+ 	<div class="spoiler_body">
+  	x ∈(–∞;–3)U [–2,5;–2)U(–2;–1)U(1;+∞)<br>
+ 	</div>
+	</div>
+	<p>5. <img src="task_15.4.png"></p>
+		<div>
+ 	<a href="" class="spoiler_links">Ответ</a>
+ 	<div class="spoiler_body">
+  	x ∈{1;2; 7;8;13}<br>
+ 	</div>
+	</div>
+	<input type="button" value="Закрыть все"
+    onclick=$("div[class^='spoiler_body']").hide('normal')>
+	<input type="button" value="Открыть все"
+    onclick=$("div[class^='spoiler_body']").show('normal')>
+	</article>
 		
 	<footer>
 		Copywright &copy; 2017

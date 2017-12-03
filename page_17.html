@@ -5,6 +5,19 @@
 	<meta name="despription" content="Задание 17">
 	<title>Задание 17</title>
 	<link rel="stylesheet" href="mystyle_2.css">
+	<style type="text/css">
+ .spoiler_body {display:none; cursor:pointer;}
+</style>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+</head>
+<script type="text/javascript">
+$(document).ready(function(){
+ $('.spoiler_links').click(function(){
+  $(this).parent().children('div.spoiler_body').toggle('normal');
+  return false;
+ });
+});
+</script>
 </head>
 <nav id="main_menu">
 	<ul>
@@ -17,7 +30,48 @@
 </h1>
 </header>
 <body>
-	<article id="article_menu"><strong>На данной странице представлены типовые задачи задания №17.</strong></article>
+	<article id="article_menu"><strong>На данной странице представлены типовые задачи задания №17.</strong>
+		<p>Для решения задач такого типа необходимо умение решать текстовые задачи повышенной сложности.</p>
+		<p>1. ДВ июле Виктор планирует взять в кредит 2,5 млн рублей. Условия его возврата таковы:</p>
+
+				<p>— каждый январь долг возрастает на 20% по сравнению с кондом предыдущего года;</p>
+
+				<p>— с февраля по июнь каждого года Виктор должен выплатить некоторую часть долга.</p>
+
+			<p>На какое минимальное количество лет Виктор может взять кредит, чтобы ежегодные выплаты были не более 760 тысяч рублей?</p>
+		<div>
+ 	<a href="" class="spoiler_links">Ответ</a>
+ 	<div class="spoiler_body">
+  	б) 6<br>
+ 	</div>
+	</div>
+	<p>2. В июле 2016 года Тимур планирует взять кредит в банке на четыре года в размере S млн р., где S — целое число. Условия его возврата следующие:</p>
+
+				<p>— каждый январь долг увеличивается на 15% по сравнению с концом предыдущего года;</p>
+
+				<p>— выплата должна производиться один раз в год с февраля по июнь;</p>
+				<p>— в июле каждого года долг должен составлять часть кредита в соответствии со следующей таблицей:</p>
+
+			<p>Найдите наибольшее значение S, при котором общая сумма выплат Тимура будет меньше 30 млн р.</p>
+			<img src="task_17.2.png">
+		<div>
+ 	<a href="" class="spoiler_links">Ответ</a>
+ 	<div class="spoiler_body">
+  	б) 22 млн руб.<br>
+ 	</div>
+	</div>
+	<p>3. Зоопарк распределяет 111 кг. мяса между лисами, леопардами и львами. Каждой лисе полагается 2 кг. мяса, леопарду – 14 кг., льву 21 кг. Известно, что у каждого льва бывает ежедневно 230 посетителей, у каждого леопарда – 160, у каждой лисы 20. Сколько должно быть лис, леопардов и львов в зоопарке, что бы ежедневно число посетителей у этих животных было наибольшим?</p>
+		<div>
+ 	<a href="" class="spoiler_links">Ответ</a>
+ 	<div class="spoiler_body">
+  	б) 3 лисы; 6 леопардов и 1 лев.<br>
+ 	</div>
+	</div>
+	<input type="button" value="Закрыть все"
+    onclick=$("div[class^='spoiler_body']").hide('normal')>
+	<input type="button" value="Открыть все"
+    onclick=$("div[class^='spoiler_body']").show('normal')>
+	</article>
 		
 	<footer>
 		Copywright &copy; 2017

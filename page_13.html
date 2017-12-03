@@ -5,7 +5,19 @@
 	<meta name="despription" content="Задание 13">
 	<title>Задание 13</title>
 	<link rel="stylesheet" href="mystyle_2.css">
+	<style type="text/css">
+ .spoiler_body {display:none; cursor:pointer;}
+</style>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 </head>
+<script type="text/javascript">
+$(document).ready(function(){
+ $('.spoiler_links').click(function(){
+  $(this).parent().children('div.spoiler_body').toggle('normal');
+  return false;
+ });
+});
+</script>
 <nav id="main_menu">
 	<ul>
 		<li><a href="Mainpage.html">Главная</a></li><li>Полезные материалы</li><li>Контакты</li>
@@ -17,7 +29,43 @@
 </h1>
 </header>
 <body>
-	<article id="article_menu"><strong>На данной странице представлены типовые задачи задания №13.</strong></article>
+	<article id="article_menu"><strong>На данной странице представлены типовые задачи задания №13.</strong>
+		<p>Для успешного решения задач такого типа необходимо умение решать тригонометрические, показательные и иррациональные уравнения</p>
+		<p>1. <img src="task_13.1.png"> </p>
+		<div>
+ 	<a href="" class="spoiler_links">Ответ</a>
+ 	<div class="spoiler_body">
+  	<img src="solution_13.1.png"><br>
+ 	</div>
+	</div>
+	<p>2. <img src="task_13.2.png"> </p>
+		<div>
+ 	<a href="" class="spoiler_links">Ответ</a>
+ 	<div class="spoiler_body">
+  	а)х=(π/2)+2πk, k∈Z
+	x=±(π/3)+2πk, k ∈Z ; x=±(2π/3)+2πk, k ∈Z
+	б) Указанному промежутку принадлежат корни
+	(–π/3) и (–2π/3)<br>
+ 	</div>
+	</div>
+	<p>3. <img src="task_13.3.png"> </p>
+		<div>
+ 	<a href="" class="spoiler_links">Ответ</a>
+ 	<div class="spoiler_body">
+  	а)x=–arcsin(2/3)+2πk, k∈Z;
+	x=π+arcsin(2/3)+2πn, n∈Z
+	или
+	x=(π/6)+2πm, m∈Z;
+	x=(5π/6)+2πs, s∈Z.
+	б) Указанному промежутку принадлежат два корня:
+	arcsin(–2/3) и(π/6).<br>
+ 	</div>
+	</div>
+	<input type="button" value="Закрыть все"
+    onclick=$("div[class^='spoiler_body']").hide('normal')>
+	<input type="button" value="Открыть все"
+    onclick=$("div[class^='spoiler_body']").show('normal')>
+	</article>
 		
 	<footer>
 		Copywright &copy; 2017
